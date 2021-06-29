@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-image: url(./nature-pokemon-wallpaper-preview.jpg);
+  background-size: 1500px;
+  object-fit: contain;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-list-container {
+  margin: 3%;
+}
+
+.pokemon-list-container button {
+  height: 50px;
+  width: 100px;
+}
+
+.pokemon-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-info img {
+  height: 300px;
+  width: 300px;
+}
+
+.btn {
+  margin: 10px;
+}
