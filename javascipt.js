@@ -20,8 +20,8 @@ function getPokemonList(url) {
         container.innerHTML += `<button class='btn' onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.next}')">Next</button>`;
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.previous}')">Previous</button>`;
+      container.innerHTML += `<br><br><button class='btn' onclick="getPokemonList('${data.next}')">Next</button>`;
+      container.innerHTML += `<br><br><button class='btn' onclick="getPokemonList('${data.previous}')">Previous</button>`;
     });
 }
 
@@ -37,7 +37,10 @@ function getPokemonInfo(url) {
       console.log(data);
       // Write data to pokemon information container
       document.querySelector(".pokemon-info").innerHTML = `
+      <div class="info">
      <img src="${data.sprites.front_default} ">
+     <p>Type: <span class="type"> ${data.types[0].type.name}</span></p>
+     </div>
      `;
     });
 }
