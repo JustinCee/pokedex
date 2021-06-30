@@ -42,13 +42,18 @@ body {
   justify-content: center;
 }
 
+.info h3 {
+  display: flex;
+  justify-content: center;
+}
+
 .pokemon-info img {
   height: 300px;
   width: 300px;
 }
 
 .btn {
-  margin: 1%;
+  margin: 1.5%;
   border-radius: 30%;
   font-size: 1em;
 }
@@ -94,5 +99,13 @@ body {
     background-image: url(./f2c63f9746f7b3dec71fce0235226ac7.jpg);
     object-fit: contain;
     background-size: 750px;
+  }
+
+  .info p {
+    color: white;
+  }
+
+  .info h3 {
+    color: white;
   }
 }
