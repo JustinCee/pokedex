@@ -38,7 +38,7 @@ function getPokemonInfo(url) {
       // Write data to pokemon information container
       document.querySelector(".pokemon-info").innerHTML = `
       <div class="info">
-     <img src="${data.sprites.front_default} ">
+     <img src="${data.sprites.other["official-artwork"].front_default} ">
      <p>Type: <span class="type"> ${data.types[0].type.name}</span></p>
      </div>
      `;
