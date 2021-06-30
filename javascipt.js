@@ -30,6 +30,7 @@ getPokemonList(base_URL);
 
 // Function to get information about a specific pokemin
 function getPokemonInfo(url) {
+  window.scrollTo(0, 0);
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

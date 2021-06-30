@@ -11,6 +11,7 @@ body {
   background-image: url(./nature-pokemon-wallpaper-preview.jpg);
   background-size: 1500px;
   object-fit: contain;
+  height: 100vh;
 }
 
 .logo {
