@@ -8,15 +8,13 @@
 }
 
 body {
-  background-image: url(./nature-pokemon-wallpaper-preview.jpg);
-  background-size: 1500px;
+  background-image: url(./5003472.jpg);
   object-fit: contain;
-  height: 100vh;
 }
 
 .logo {
   height: 100px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .pokemon-list-container {
@@ -90,5 +88,11 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  body {
+    background-image: url(./f2c63f9746f7b3dec71fce0235226ac7.jpg);
+    object-fit: contain;
+    background-size: 750px;
   }
 }
