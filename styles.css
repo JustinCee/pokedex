@@ -63,6 +63,43 @@ body {
   color: antiquewhite;
 }
 
+.next-prev {
+  display: flex;
+  margin: 1.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  margin: 3%;
+  border-radius: 30%;
+  font-size: 1em;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin: 3%;
+  border-radius: 30%;
+  font-size: 1em;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.next:hover {
+  background-color: #66bd8a;
+  color: antiquewhite;
+}
+
+.prev:hover {
+  background-color: #66bd8a;
+  color: antiquewhite;
+}
+
 .pokeball {
   height: 100px;
   width: 100px;

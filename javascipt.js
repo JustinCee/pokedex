@@ -13,6 +13,7 @@ function getPokemonList(url) {
       let pokemon = data.results;
       // Get element from HTML to write buttons in
       let container = document.querySelector(".pokemon-list-container");
+      let nextprevbtn = document.querySelector(".next-prev");
       // Clear the container
       container.innerHTML = "";
       // Loop over pokemon list and create an HTML button for each one. Add the button to the container
@@ -20,7 +21,8 @@ function getPokemonList(url) {
         container.innerHTML += `<button class='btn' onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
-      container.innerHTML += `<br><br><button class='btn' onclick="getPokemonList('${data.next}')">Next</button>, <br><br><button class='btn' onclick="getPokemonList('${data.previous}')">Previous</button>`;
+      nextprevbtn.innerHTML += `<br><br><button class='next' onclick="getPokemonList('${data.next}')">Next</button>`;
+      nextprevbtn.innerHTML += `<button class='prev' onclick="getPokemonList('${data.previous}')">Previous</button>`;
     });
 }
 
