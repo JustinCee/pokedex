@@ -21,7 +21,7 @@ function getPokemonList(url) {
         container.innerHTML += `<button class='btn' onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
-      nextprevbtn.innerHTML += `<br><br><button class='next' onclick="getPokemonList('${data.next}')">Next</button>`;
+      nextprevbtn.innerHTML = `<br><br><button class='next' onclick="getPokemonList('${data.next}')">Next</button>`;
       nextprevbtn.innerHTML += `<button class='prev' onclick="getPokemonList('${data.previous}')">Previous</button>`;
     });
 }
